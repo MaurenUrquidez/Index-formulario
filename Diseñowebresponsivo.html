@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diseño web RESPONSIVO</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: deeppink;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: pink;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: deeppink;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Diseño web RESPONSIVO
+
+
+<header>
+  <h2>Gastronomia </h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Mazatlan</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Suaves</h1>
+    <p>Lo suaves son unos dulces mazatlecos o también se conocen como bombones de coco es un dulce tradicional de la perla del pacifico. Este producto tiene más de 60 años de tradición en Mazatlán y se ha convertido en un dulce codiciado</p>
+         <img src="suaves.jpg" alt="" height="500px" width="500px">
+
+         <h1>Mazapan</h1>
+    <p>Los ingredientes principales de los mazapanes son, los cacahuates, azúcar, almendra, leche, soya y huevo. Cada uno de ellos, le da un toque especial al mazapán y hace que su sabor sea inigualable, pues al momento de comerlo, podemos sentir como se deshace en nuestro paladar siendo una textura suave y fina.
+    </p>
+         <img src="mazapan.jpg" alt="" height="500px" width="500px">
+
+         <h1>Cocadas</h1>
+    <p>Cocadas. Es un dulce tradicional que se realiza con coco rallado, azúcar y leche, tradicional en cualquier época del año. Muéganos.
+    </p>
+         <img src="cocadas.jpg" alt="" height="500px" width="500px">
+
+
+
+
+  </article>
+</section>
+<footer>
+  <p>Dulces conocidos en Mazatlan</p>
+</footer>
+
+</body>
+</html>
